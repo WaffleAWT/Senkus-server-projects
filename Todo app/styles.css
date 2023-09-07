@@ -1,5 +1,6 @@
 /* Default shit */
 body, ul {
+    cursor: url('Assets/Cursor/Idle.png'), auto;
     margin: 0;
     padding: 0;
 }
@@ -60,6 +61,7 @@ body {
     border: 2px solid #9b7894;
     border-radius: 5px;
     outline: none;
+    cursor: url('Assets/Cursor/Text.png'), text;
 }
 
 #add-button {
@@ -72,6 +74,7 @@ body {
     cursor: pointer;
     font-family: 'Bangers', cursive;
     margin-left: 10px;
+    cursor: url('Assets/Cursor/Pointer.png'), pointer;
 }
 
 #description-input {
@@ -85,6 +88,7 @@ body {
     resize: none;
     word-wrap: break-word;
     white-space: normal;
+    cursor: url('Assets/Cursor/Text.png'), text;
 }
 
 .task-description {
@@ -149,7 +153,7 @@ button {
     padding: 5px 15px;
     border-radius: 3px;
     border: 2px solid #9b7894;
-    cursor: pointer;
+    cursor: url('Assets/Cursor/Pointer.png'), pointer;
 }
 
 input[type="checkbox"] {
@@ -161,6 +165,7 @@ input[type="checkbox"] {
     border: 2px solid #9b7894;
     border-radius: 3px;
     position: relative;
+    cursor: url('Assets/Cursor/Idle.png'), auto;
 }
 
 input[type="checkbox"]:checked {
