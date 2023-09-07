@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'm3x6';
+    src: url('Assets/Fonts/m3x6.ttf') format('woff2'),
+         url('Assets/Fonts/m3x6.ttf') format('woff');
+}
+
+body {
+    font-family: 'm3x6', sans-serif;
+    font-size: xx-large;
+    background-image: url('Assets/Images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    font-size: xx-large;
+    background-color: #daa4806b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #85644e6b;
+    max-width: 400px;
+}
+
+h1 {
+    color: #333;
+}
+
+.choices img {
+    width: 64px;
+    height: 80px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #b67d576b;
+    transform: scale(1.5);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+#game-result {
+    font-weight: bold;
+    font-size: 48px;
+    color: #333;
+}

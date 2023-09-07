@@ -1,0 +1,211 @@
+/* Default shit */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global shit */
+body {
+    font-family: 'Bangers', cursive;
+    background-image: url('Assets/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 640px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.title-animation {
+    font-weight: bold;
+    color: #f5b6d3;
+    text-shadow: 2px 2px #9b7894;
+    animation: titleAnimation 3s ease infinite;
+}
+
+.task-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#task-input {
+    flex: 1;
+    font-family: 'Bangers', cursive;
+    padding: 10px;
+    border: 2px solid #9b7894;
+    border-radius: 5px;
+    outline: none;
+}
+
+#add-button {
+    background-color: #e098ba;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: 2px solid #9b7894;
+    cursor: pointer;
+    font-family: 'Bangers', cursive;
+    margin-left: 10px;
+}
+
+#description-input {
+    font-family: 'Bangers', cursive;
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #9b7894;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.task-description {
+    font-size: 14px;
+    color: #9b7894;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+ul::-webkit-scrollbar {
+    width: 12px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #f5b6d3bd;
+    border-radius: 5px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #e098ba;
+    border-radius: 5px;
+}
+
+li {
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #f5b6d3bd;
+    border-radius: 5px;
+    border: 2px solid #9b7894;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    font-weight: bold;
+    max-width: 60%;
+    color: #9b7894;
+}
+
+p.task-description {
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-top: 5px;
+    align-items: center;
+}
+
+button {
+    background-color: #e098ba;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: 2px solid #9b7894;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #e098ba;
+    border: 2px solid #9b7894;
+    border-radius: 3px;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #e098ba;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "✔";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li.completed {
+    background-color: #f5b6d356;
+    text-decoration: line-through;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: #9b7894;
+    font-family: 'Bangers', cursive;
+    font-size: 18px;
+}
+
+#footer-image-left img,
+#footer-image-right img {
+    width: 40px;
+}
+
+#footer-image-left {
+    margin-right: 10px;
+}
+
+#footer-image-right {
+    margin-left: 10px;
+}
