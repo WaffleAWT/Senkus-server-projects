@@ -62,6 +62,7 @@ body {
     border-radius: 5px;
     outline: none;
     cursor: url('Assets/Cursor/Text.png'), text;
+    color: #9b7894;
 }
 
 #add-button {
@@ -89,6 +90,7 @@ body {
     word-wrap: break-word;
     white-space: normal;
     cursor: url('Assets/Cursor/Text.png'), text;
+    color: #9b7894;
 }
 
 .task-description {

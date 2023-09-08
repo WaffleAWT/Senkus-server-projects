@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
+    <audio id="winSound" src="Assets/Audio/Win"></audio>
+    <audio id="loseSound" src="Assets/Audio/Lose"></audio>
+    <audio id="tieSound" src="Assets/Audio/Tie"></audio>
 </head>
 <body>
     <div class="container">
@@ -23,6 +26,12 @@
             <p>Result:</p>
             <p id="game-result">Waiting for your choice...</p>
         </div>
+        
+        <div class="scores">
+            <p id="player-score">Player Score: 0</p>
+            <p id="computer-score">Computer Score: 0</p>
+        </div>
+        
     </div>
     <div id="footer">
         <p>WaffleAWT</p>

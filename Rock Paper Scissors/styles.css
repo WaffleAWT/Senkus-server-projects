@@ -71,15 +71,23 @@ button:hover {
     text-shadow: 2px 2px 0px #131313, -2px -2px 0px #131313, 2px -2px 0px #131313, -2px 2px 0px #131313;
 }
 
+.scores {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: #b4b4b4;
+    text-shadow: 1px 1px 0px #131313, -1px -1px 0px #131313, 1px -1px 0px #131313, -1px 1px 0px #131313;
+}
+
 #footer {
-    position: absolute;
-    bottom: 0px;
-    right: 8px;
+    position: fixed; /* Change to fixed for a persistent footer */
+    bottom: 0;
+    right: 0; /* Adjusted to be flush with the right edge */
     background-color: transparent;
     display: flex;
     align-items: flex-end;
     color: #e69c69;
-    padding: 0;
+    padding: 10px; /* Add some padding as needed */
     border-radius: 5px;
-    font-size: 64px;
+    font-size: 48px; /* Adjusted font size for readability */
 }
