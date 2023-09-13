@@ -80,14 +80,14 @@ button:hover {
 }
 
 #footer {
-    position: fixed; /* Change to fixed for a persistent footer */
+    position: fixed;
     bottom: 0;
-    right: 0; /* Adjusted to be flush with the right edge */
+    right: 0;
     background-color: transparent;
     display: flex;
     align-items: flex-end;
     color: #e69c69;
-    padding: 10px; /* Add some padding as needed */
+    padding: 10px;
     border-radius: 5px;
-    font-size: 48px; /* Adjusted font size for readability */
+    font-size: 48px;
 }
